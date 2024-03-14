@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" type="image/png" href="icon/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="icon/icon-192x192.png">
+  <title>TrainingApp</title>
+  <script src="js/bundle.js" defer></script>
+</head>
+<body>
+  <div id="parent">
+
+    <div class="container">
+      <div class="top">
+        <div class="wrap-gear" id="wrap-gear">
+          <i class="fa-solid fa-gear icon" id="gear"></i>
+        </div>
+      </div>
+          
+      <div class="title" id="title-bar">タイトル</div>
+      <div class="record" id="continuation">○日継続中</div>
+      <div class="turn" id="turn-name">STAND BY</div>
+      <div  id="container"></div>
+      <button type="button" class="button-main" id="ss-button">START</button>
+      <button type="button" class="button-main" id="reset-button">RESET</button>
+    </div>
+    <!-- 設定画面 -->
+    <div class="config close" id="config">
+      <div class="top">
+        <div id="right-arrow">
+          <i class="fa-solid fa-arrow-right icon"></i>
+        </div>
+      </div>
+      <div class="tools">
+        <div id="new-file">
+          <i class="fa-solid fa-file-circle-plus icon"></i>
+        </div>
+        <div id="edit-name">
+          <i class="fa-solid fa-pen icon"></i>
+        </div>
+        <div id="trash-can">
+          <i class="fa-solid fa-trash-can icon"></i>
+        </div>
+      </div>
+      <select name="select-title" id="select-title">
+      </select>
+      <ul class="units" id="units">
+        
+      </ul>
+      <div class="tools">
+        <button type="button" id="btn-add-turn">ターンを追加</button>
+      </div>
+    </div>  
+  </div>
+  
+  <audio id="sound1" preload="auto" src="src/sound1.mp3"></audio>
+  <audio id="sound2" preload="auto" src="src/sound2.mp3"></audio>
+  <audio id="sound3" preload="auto" src="src/sound3.mp3"></audio>
+</body>
+</html>
